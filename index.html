@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Clean Kitchen</title>
+<link rel="stylesheet" href="style.css">
+<script src="your-script.js" defer></script>
+
+
+  <!-- Font Awesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+
+<body>
+<div class="preloader"></div>
+<script>
+
+window.addEventListener('load', function () {
+
+  var preloader = document.querySelector('.preloader');
+  preloader.style.display = 'none';
+});
+
+</script>
+<!--Mini Navbar Start-->
+<div class="navbar">
+  <div class="left-side">
+    <img src="images/logo/logo-removebg-preview.png" alt="Logo">
+  </div>
+  <div class="right-side">
+    <i class="fa fa-envelope"></i>
+    <div class="right-content">
+      <h3>Drop Us Mail</h3>
+      <h4>Info@Youremail.com</h4>
+    </div>
+	<i class="fa fa-phone"></i>
+	<div class="right-content">
+      <h3>Call us Any Time</h3>
+      <h4>(000)000-0000</h4>
+    </div>
+    <button>APPOINTMENT</button>
+  </div>
+</div>
+<!--Mini Navbar End-->
+
+<!--menu bar Start-->
+<div class="menu-bar">
+    <input type="checkbox" class="menu-toggle" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">CLEANING SERVICES</a></li>
+        <li><a href="#">ENVIRONMENT SERVICES</a></li>
+        <li><a href="#">CONTACT US</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">MORE</a></li>
+    </ul>
+</div>
+<!--menu bar End-->	
+
+<!--Slider Start-->	
+ <div class="slider-container">
+    <div class="slider">
+      <div class="slide">
+        <img src="images/slider/bigstock-Sanitary-Day-In-The-Restaurant-316095811.jpg" alt="Slide 1">
+        <div class="slide-content">
+          <h2>Restaurant Hood and</h2>
+          <h2><span>Full Service Professional</span></h2>
+          <h2>Restaurant Cleaning</h2>
+          <button>OUR SERVICES</button>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="images/slider/commercial-kitchen-floor-cleaning.webp" alt="Slide 2">
+        <div class="slide-content">
+          <h2>Restaurant Hood and</h2>
+          <h2><span>Full Service Professional</span></h2>
+          <h2>Restaurant Cleaning</h2>
+          <button>OUR SERVICES</button>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="images/slider/dreamstime_xxl_102967276.jpg" alt="Slide 3">
+        <div class="slide-content">
+          <h2>Restaurant Hood and</h2>
+          <h2><span>Full Service Professional</span></h2>
+          <h2>Restaurant Cleaning</h2>
+          <button>OUR SERVICES</button>
+        </div>
+      </div>
+    </div>
+    <!-- Circle container for navigation -->
+    <div class="circle-container">
+      <div class="circle" onclick="changeSlide(0)"></div>
+      <div class="circle" onclick="changeSlide(1)"></div>
+      <div class="circle" onclick="changeSlide(2)"></div>
+    </div>
+  </div>
+
+  <script>
+    let slider = document.querySelector('.slider');
+    let slides = document.querySelectorAll('.slide');
+    let circles = document.querySelectorAll('.circle');
+
+    let index = 0;
+    let interval = setInterval(nextSlide, 3000); 
+
+    function nextSlide() {
+      index++;
+      if (index === slides.length) {
+        index = 0;
+      }
+      updateSlider();
+    }
+
+    function updateSlider() {
+      slider.style.transform = `translateX(-${index * 100}%)`;
+      // Update active circle
+      circles.forEach((circle, i) => {
+        if (i === index) {
+          circle.style.backgroundColor = '#87CEEB';
+          circle.style.borderColor = '#fff';
+        } else {
+          circle.style.backgroundColor = '#87CEEB';
+          circle.style.borderColor = '#fff';
+        }
+      });
+    }
+
+    // Function to change slide on circle click
+    function changeSlide(newIndex) {
+      index = newIndex;
+      updateSlider();
+    }
+  </script>
+<!--Slider End-->
+
+<!--Card Start-->
+
+<div class="container">
+  <div class="card">
+    <h4>Kitchen Hood Exhaust Cleaning</h4>
+  </div>
+  <div class="card">
+    <h4>Grease Rooftop Containment</h4>
+  </div>
+  <div class="card">
+    <h4>Grease Trap Pumping</h4>
+  </div>
+  <div class="card">
+    <h4>Steam Cleaning</h4>
+  </div>
+</div>
+
+<!--Card End-->
+
+<!--Welcome Section start-->
+<div class="welcome-container">
+    <h1 class="welcome-heading">Welcome to Clean and Clear</h1>
+    <p class="welcome-paragraph">We go beyond ordinary cleaning to ensure your peace of mind.</p>
+  </div>
+<!--Welcome Section end-->
+
+<!--featured Section Start-->
+<div class="featured-container">
+    <div class="featured-card">
+        <p>your, Merced, trusted partner in creating clean, healthy safe, and inviting spaces for businesses and homes. We provide sevices to Fersno, Madera Mariposa, Merced, Stanislaus and San Joaquin counties. With a genuine commitment o health, safety, and excellence. </p>
+		<h2>"Rethinking What Clean Means"</h2>
+    </div>
+</div>
+<!--featured Section End-->
+
+
+<!--about Section Start-->
+<div class="container about clearfix">
+  <div class="left-section about">
+    <h2>About Cleaning Company</h2>
+    <h1>RELY ON US FOR EXCEPTIONAL SERVICE</h1>
+    <p>We are <span>CLEAN AND CLEAR,</span> cleaing service provider.</p>
+    <p>Clean and clear is passionate about providing high-quality cleaning and environment services that provides clearly seen benefits to our customers and the community. We pride ourselves on providing a personal touch and we beleive every eustomers needs are unique.</p>
+    <a href="#" class="about-button">ABOUT US</a>
+  </div>
+  <div class="right-section">
+    <img src="images/about us/female-cook-cleaning-her-kitchen-600nw-2297363487.webp" alt="Image description">
+  </div>
+</div>
+
+<!--about Section End-->
+
+<!--owl slider Start-->
+
+<div class="full-width-container-service">
+  <h1>WHY WILL YOU CHOOSE</h1>
+  <h2 class="service-heading">OUR SERVICES</h2>
+  <div class="container-service">
+    <div class="owl-carousel">
+      <div class="item-service">
+        <div class="card-service">
+          <img src="images/slider/bigstock-Sanitary-Day-In-The-Restaurant-316095811.jpg" alt="Image 1">
+          <div class="card-content-service">
+            <h2>Kitchen Hood Exhaust Cleaning</h2>
+            <p>Clean and Clear isn't just a name. It's a promise of excellence.</p>
+            <a href="#" class="read-more-service">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="item-service">
+        <div class="card-service">
+          <img src="images/slider/commercial-kitchen-floor-cleaning.webp" alt="Image 2">
+          <div class="card-content-service">
+            <h2>Grease Rooftop Containment</h2>
+            <p>Clean and Clear isn't just a name. It's a promise of excellence.</p>
+            <a href="#" class="read-more-service">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="item-service">
+        <div class="card-service">
+          <img src="images/slider/dreamstime_xxl_102967276.jpg" alt="Image 3">
+          <div class="card-content-service">
+            <h2>Steam Cleaning</h2>
+            <p>Clean and Clear isn't just a name. It's a promise of excellence.</p>
+            <a href="#" class="read-more-service">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="owl-nav">
+      <button class="owl-prev"><i class="fas fa-chevron-left"></i></button>
+      <button class="owl-next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+</div>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true, 
+      responsive:{
+        0:{
+          items:1
+        },
+        600:{
+          items:3
+        },
+        1000:{
+          items:3
+        }
+      }
+    });
+  });
+</script>
+
+<!--owl slider End-->
+
+
+
+
+
+
+<!--Five Star Start-->
+<div class="container-Five">
+    <img src="images/logo/star.png" alt="Your Image" style="display: block; margin: 0 auto;">
+    <h1 style="text-align: center;">OUR PROFESSIONAL COMMERCIAL CLEANING SERVICES</h1>
+</div>
+<!--Five Star End-->
+
+<!--Innovation Section Start-->       
+<div class="hygiene-full-width-container">
+  <div class="hygiene-content-container">
+    <div class="hygiene-content">
+      <h1>Step into a world where hygiene meets innovation.</h1>
+      <p>Our full service cleaning company is a symphony of skill and science. From steam cleaning of built-up grease and carbon on kitchen appliances to mold and mildrew treatment in fitness center locker rooms, we leave no corner untouched.</p>
+      <h2>Dealing with unpleasant odors or poor indoor air quality?</h2>
+      <p>We don't just clean, we rejuvenate and safeguard your space with the latest in cleaning services, solutions, and technology.</p>
+      <a href="#" class="hygiene-button">OUR SERVICES</a>
+    </div>
+  </div>
+</div>  
+<!--Innovation Section End-->
+
+
+<!--goal Section Start-->
+<div class="container-goal-fullwidth">
+  <div class="container goal">
+    <div class="left-section goal">
+      <h2>OUR GOAL AND MISION IS TO PROVIDE OUR CUSTOMERRS AND COMMUNITY WITH A HEALTHY, SAFE AND CLEAN ENVIRONMENT.</h2>
+      <p>Clean and Clear is the Central Valley's premier full service, restaurant commercial cleaning and environment service company. Our goal is to provide our customers with a cleaner, healthier, and safer environment.</p>
+	  <p>We specialize in kitchen exhaust and cooking appliance cleaning, reducing the risk of fires and other hazards associated with grease build up. Our (disinfection), odor removal, and indor air quality improvement.</p>
+      <a href="#" class="goal-button">LEARN MORE</a>
+    </div>
+    <div class="right-section-goal">
+      <img src="images/our goal/bigstock-Sanitary-Day-In-The-Restaurant-316095811.jpg"  alt="Our Goal Image">
+    </div>
+  </div>
+</div>
+<!--goal Section End-->
+
+<!--Rejuvenate Section Start-->       
+<div class="rejuvenate-full-width-container">
+  <div class="rejuvenate-content-container">
+    <div class="rejuvenate-content">
+      <h1>REJUVETENATE YOUR BUSINESS TODAY</h1>
+      <p>Our service cater to a diverse range of businesses. We're not content to clean just for appearances or just on the surface,; we dive deep to ensure a level of cleanliness that resonates with your commitment to quality.</p>
+      <p>Join us in creating cleaner, safer, and healthier environments across the Central Valley. Discover the difference that Clean and clear brings <span style="font-weight:bold;">Where every clean is a step towards a brighter future.</span></p>
+      <a href="#" class="rejuvenate-button">CALL US TODAY</a>
+    </div>
+  </div>
+</div>  
+<!--Rejuvenate Section End-->   
+
+<!--appoinment Section start-->
+<div class="container-appoinment">
+  <h2 class="heading-appoinment">Want to Book an Appoinment?</h2>
+  <h2 class="heading-lets">Let's get Started!</h2>
+  <a href="#" class="button-appoinment">Contact Us</a>
+</div>
+<!--appoinment Section End-->
+
+
+<!--Footer Start-->
+<footer>
+  <div class="logo footer-design">
+    <img src="images/logo/logo-removebg-preview.png" alt="Logo">
+    <div class="logo-text">
+      <h2>No. 1 Cleaning Company with 21 years of experience</h2>
+      <h4>Call US Now:</h4>
+      <p>(000) 000-00000</p>
+      <h4>EMAIL ADDRESS:</h4>
+      <p>Info@Youremail.com</p>
+    </div>
+  </div>
+  <div class="menu footer-design">
+    <h3>Features</h3>
+    <ul>
+      <li><a href="#">How it Works</a></li>
+      <li><a href="#">Our Services</a></li>
+      <li><a href="#">Why Us??</a></li>
+      <li><a href="#">Our Blog</a></li>
+      <li><a href="#">Testimonial</a></li>
+    </ul>
+  </div>
+  <div class="menu footer-design">
+    <h3>Company</h3>
+    <ul>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Watch Our Video</a></li>
+      <li><a href="#">Case Studies</a></li>
+      <li><a href="#">Contact US</a></li>
+    </ul>
+  </div>
+  <div class="menu footer-design">
+    <h3>Our Policies</h3>
+    <ul>
+      <li><a href="#">Privacy & Policy</a></li>
+      <li><a href="#">Terms Of Use</a></li>
+      <li><a href="#">Cookies Policy</a></li>
+      <li><a href="#">Refund Policy</a></li>
+    </ul>
+  </div>
+  
+</footer>
+<div class="container-footer-copyright">
+<p>@2023 Clean and clear, LLC-All rights reserved</p>
+</div>
+<!--Footer End-->
+</body>
+</html>
